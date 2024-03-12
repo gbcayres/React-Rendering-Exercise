@@ -2,25 +2,18 @@ import CardList from './components/CardList'
 
 function App() {
 
-  const users = [{
-    username: 'gbcayres',
-    password: '12345',
-    email: 'user3@exemplo.com',
-    job: 'Dev'
-  },
-  {
-    username: 'yoros666',
-    password: '12345',
-    email: 'user3@exemplo.com',
-    job: 'Chef'
-  },
-  {
-    username: 'user3',
-    password: '12345',
-    email: 'user3@exemplo.com',
-    job: 'Bus Driver'
+  const users = []
+
+  for (let i = 0; i < 10; i++) {
+    const exampleUser = {
+      username: 'exampleUser',
+      password: '12345',
+      email: 'user@exemplo.com',
+      job: 'Dev'
+    }
+
+    users.push(exampleUser)
   }
-  ]
 
   return (
     <div className="App">

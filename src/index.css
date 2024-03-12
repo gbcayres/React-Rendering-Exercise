@@ -10,7 +10,7 @@
 }
 
 body {
-  height: 100vh;
+  padding: 3rem 0;
   width: 100%;
   font-family: 'JetBrains Mono';
   display: flex;
