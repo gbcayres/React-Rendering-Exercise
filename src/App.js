@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import CardList from './components/CardList'
 
 function App() {
+
+  const users = [{
+    username: 'gbcayres',
+    password: '12345',
+    email: 'user3@exemplo.com',
+    job: 'Dev'
+  },
+  {
+    username: 'yoros666',
+    password: '12345',
+    email: 'user3@exemplo.com',
+    job: 'Chef'
+  },
+  {
+    username: 'user3',
+    password: '12345',
+    email: 'user3@exemplo.com',
+    job: 'Bus Driver'
+  }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="title">Rendering cards exercise</h1>
+      <div className="container">
+        <CardList users={users}/>
+      </div>
     </div>
   );
 }
 
 export default App;
+
